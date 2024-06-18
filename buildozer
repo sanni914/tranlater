@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Translater
 
 # (str) Package name
-package.name = myapp
+package.name = translaterapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3==3.10.12, kivy==2.1.0, kivymd==1.1.1, pillow==9.2.0, speechrecognition==3.8.1, googletrans==4.0.0-rc1, pyttsx3==2.90, pyjnius==1.4.1
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -101,13 +101,13 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 31
+android.api = 31
 
 # (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+android.sdk = 21
 
 # (str) Android NDK version to use
 #android.ndk = 23b
@@ -119,7 +119,7 @@ fullscreen = 0
 #android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
+android.ndk_path = /path/to/your/android-ndk-r21e
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
 #android.sdk_path =
